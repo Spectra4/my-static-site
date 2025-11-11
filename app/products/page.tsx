@@ -1,3 +1,5 @@
+import Card from "@/components/Card";
+
 export default function Products() {
   const products = [
     {
@@ -47,6 +49,12 @@ export default function Products() {
         We design, manufacture, and supply world-class crushing equipment and complete plant
         solutions — engineered to deliver performance, durability, and value for every project.
       </p>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {products.map((p) => (
+          <Card key={p.title} title={p.title} description={p.description} image={p.image} />
+        ))}
+      </div>
     </section>
   );
 }
