@@ -121,7 +121,7 @@ export default function Navbar() {
             menuOpen ? "max-h-[400px] py-4" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col items-center gap-5 text-gray-300 font-medium">
+          <ul className="flex flex-col items-left px-4 gap-5 text-gray-300 font-medium">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -137,15 +137,6 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <button
-              onClick={() => {
-                setMenuOpen(false);
-                setFormOpen(true); // ✅ open modal on mobile
-              }}
-              className="mt-2 px-5 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-full shadow-md hover:bg-yellow-400 hover:shadow-yellow-400/30 transition-all"
-            >
-              Contact Now
-            </button>
           </ul>
         </motion.div>
       </motion.header>
