@@ -20,7 +20,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-white tracking-wide">
+        <Link href="./" className="text-2xl font-bold text-white tracking-wide">
           <span className="text-yellow-400">My</span>StaticSite
         </Link>
 

@@ -1,11 +1,64 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
 export default function About() {
   return (
-    <section className="max-w-4xl mx-auto py-16 px-6 text-center">
-      <h1 className="text-4xl font-bold mb-6">About Us</h1>
-      <p className="text-gray-600 leading-relaxed">
-        We specialize in creating blazing fast static websites using Next.js and Tailwind CSS.
-        Our goal is to deliver performance, design, and simplicity in one place.
-      </p>
+    <section className="bg-gray-50 text-gray-800 py-20" id="about">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        {/* Left: Image */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative w-full h-80 md:h-[420px] rounded-2xl overflow-hidden shadow-lg"
+        >
+          <Image
+            src="/images/about-plant.png"
+            alt="Stone Crusher Plant"
+            fill
+            className="object-cover"
+            priority
+          />
+        </motion.div>
+
+        {/* Right: Text */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            About <span className="text-yellow-600">Our Company</span>
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Founded with a vision to build the backbone of modern infrastructure, our company
+            specializes in manufacturing high-quality **stone crushing machinery** and **aggregate
+            processing solutions**. With years of industry experience, we have become a trusted name
+            for reliability, innovation, and performance.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            From large-scale mining projects to local construction needs, we design and engineer
+            crushers, conveyors, and screening systems that deliver unmatched productivity and
+            durability. Every machine we build reflects our commitment to **precision engineering**,
+            **sustainability**, and **customer satisfaction**.
+          </p>
+          <div className="pt-4">
+            <motion.a
+              href="/products"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
+            >
+              Explore Our Products
+            </motion.a>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
