@@ -32,14 +32,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="bg-white py-20" id="faq">
+    <section className="py-10" id="faq">
       <div className="max-w-5xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-center mb-8"
+          className="text-3xl sm:text-4xl font-extrabold text-center mb-8"
         >
           Frequently Asked <span className="text-yellow-500">Questions</span>
         </motion.h2>
@@ -56,7 +56,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex justify-between items-center p-5 text-left text-gray-900 font-semibold hover:bg-gray-50"
+                className="w-full flex justify-between items-center p-5 text-left text-gray-50 font-semibold hover:bg-gray-600"
               >
                 {faq.question}
                 <ChevronDown
@@ -80,21 +80,21 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mt-16 bg-gray-900 text-white py-10 rounded-2xl shadow-lg"
+          className="text-center mt-16 bg-gray-300 text-black py-10 rounded-2xl shadow-lg"
         >
           <h3 className="text-2xl font-semibold mb-4">
             Still Have Questions?
           </h3>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-600 mb-6">
             Reach out to our experts and get the right solution for your
             crushing needs.
           </p>
-          <Link
-            href="/contact"
+          <button
+            onClick={() => window.dispatchEvent(new Event("openContactForm"))}
             className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all"
           >
             Contact Us
-          </Link>
+          </button>
         </motion.div>
       </div>
     </section>

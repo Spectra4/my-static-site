@@ -19,10 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white py-20 overflow-hidden">
-      {/* Decorative Grid Lines */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:40px_40px]"></div>
-
+    <section className="relative min-h-screen text-white py-28 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Info Panel */}
         <motion.div
@@ -31,9 +28,9 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Get in <span className="text-yellow-500">Touch</span>
-          </h1>
+          </h2>
           <p className="text-gray-300 mb-8 leading-relaxed">
             Have questions about our crushing equipment or plant solutions?  
             Our experts are here to help you choose the right system for your project.

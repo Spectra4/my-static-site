@@ -31,20 +31,20 @@ export default function Products() {
   ];
 
   return (
-    <section className="bg-white py-20" id="products">
+    <section className="py-10" id="products">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+          className="text-3xl sm:text-4xl font-extrabold text-white mb-4"
         >
           Our <span className="text-yellow-500">Products</span>
         </motion.h2>
 
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          From single crushers to complete crushing plants — every machine we build combines
+        <p className="text-gray-300 max-w-2xl mx-auto mb-12">
+          From single crushers to complete crushing plants every machine we build combines
           strength, precision, and reliability for demanding applications.
         </p>
 
@@ -56,7 +56,7 @@ export default function Products() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="group relative bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="group relative bg-gray-300 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
               <div className="overflow-hidden">
                 <img

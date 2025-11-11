@@ -41,11 +41,11 @@ export default function Products() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 text-center" id="products">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-10 text-gray-900">
+    <section className="max-w-7xl mx-auto py-28 px-6 text-center" id="products">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-white">
         Our <span className="text-yellow-600">Products & Solutions</span>
-      </h1>
-      <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+      </h2>
+      <p className="text-gray-300 max-w-2xl mx-auto mb-12">
         We design, manufacture, and supply world-class crushing equipment and complete plant
         solutions — engineered to deliver performance, durability, and value for every project.
       </p>

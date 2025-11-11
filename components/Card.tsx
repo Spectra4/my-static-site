@@ -13,7 +13,7 @@ export default function Card({ title, description, image }: CardProps) {
     <motion.div
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.98 }}
-      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-yellow-200 transition-all duration-300 text-left"
+      className="bg-gray-300 rounded-2xl shadow-lg overflow-hidden hover:shadow-yellow-200 transition-all duration-300 text-left"
     >
       {image && (
         <div className="relative w-full h-52">
