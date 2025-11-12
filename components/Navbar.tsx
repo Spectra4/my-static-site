@@ -84,7 +84,7 @@ export default function Navbar() {
                 </Link>
                 <motion.span
                   layoutId="underline"
-                  className={`absolute left-0 -bottom-1 h-[2px] bg-yellow-400 rounded-full transition-all duration-300 ${
+                  className={`absolute left-0 -bottom-1 h-2px bg-yellow-400 rounded-full transition-all duration-300 ${
                     pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -145,7 +145,7 @@ export default function Navbar() {
       <AnimatePresence>
         {formOpen && (
           <motion.div
-            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[999] flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-999 flex items-center justify-center p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
