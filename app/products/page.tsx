@@ -6,37 +6,37 @@ export default function Products() {
       title: "Jaw Crusher",
       description:
         "Engineered for primary crushing of hard rock and large materials. Built with heavy-duty frames and high-capacity chambers for maximum durability.",
-      image: "/images/product-jaw.png",
+      image: "/my-static-site/images/product-jaw.png",
     },
     {
       title: "Cone Crusher",
       description:
         "Designed for precision secondary and tertiary crushing. Achieves superior particle shape and consistent performance in every load.",
-      image: "/images/product-cone.png",
+      image: "/my-static-site/images/product-cone.png",
     },
     {
       title: "Vibrating Screen",
       description:
         "High-efficiency screening equipment for separating materials by size. Ensures uniform quality for aggregate production.",
-      image: "/images/product-screen.png",
+      image: "/my-static-site/images/product-screen.png",
     },
     {
       title: "Conveyor System",
       description:
         "Robust and efficient material handling conveyors built to transport aggregates smoothly between crushing stages.",
-      image: "/images/product-conveyor.png",
+      image: "/my-static-site/images/product-conveyor.png",
     },
     {
       title: "Crushing Plant Setup",
       description:
         "Turnkey stone crusher plant installations — from design to commissioning — ensuring productivity, safety, and sustainability.",
-      image: "/images/product-plant.png",
+      image: "/my-static-site/images/product-plant.png",
     },
     {
       title: "Spare Parts & Maintenance",
       description:
         "Genuine spare parts and service support for all crushing and screening equipment, ensuring long-term reliability.",
-      image: "/images/product-spares.png",
+      image: "/my-static-site/images/product-spares.png",
     },
   ];
 

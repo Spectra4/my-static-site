@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <div className="w-full h-80 sm:h-96 rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(255,215,0,0.15)] bg-gray-800 flex items-center justify-center">
               <img
-                src="/images/hero-crusher.png"
+                src="/my-static-site/images/hero-crusher.png"
                 alt="Stone crusher plant"
                 className="object-cover w-full h-full"
                 onError={(e) => {

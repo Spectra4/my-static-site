@@ -6,25 +6,25 @@ export default function Products() {
   const products = [
     {
       name: "Jaw Crusher",
-      image: "/images/product-jaw.png",
+      image: "/my-static-site/images/product-jaw.png",
       desc: "Primary crushers engineered for high reduction ratio and long service life.",
       specs: ["Capacity: 100–500 TPH", "Feed Size: up to 600mm", "Motor: 75–200 HP"],
     },
     {
       name: "Cone Crusher",
-      image: "/images/product-cone.png",
+      image: "/my-static-site/images/product-cone.png",
       desc: "Secondary crushing unit delivering superior shape and gradation.",
       specs: ["Hydraulic Setting", "Low Power Draw", "Dust Sealed System"],
     },
     {
       name: "Vibrating Screen",
-      image: "/images/product-screen.png",
+      image: "/my-static-site/images/product-screen.png",
       desc: "Efficient screening for precise separation and high throughput.",
       specs: ["3–4 Deck", "High G-force", "Rubber Deck Option"],
     },
     {
       name: "Belt Conveyor",
-      image: "/images/product-conveyor.png",
+      image: "/my-static-site/images/product-conveyor.png",
       desc: "Modular conveyors with durable rollers and energy-efficient drives.",
       specs: ["Width: 600–1000mm", "Speed: 1.2–2.0 m/s", "Inclined or Flat Layouts"],
     },
